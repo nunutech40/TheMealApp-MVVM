@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="TheMealApp_MVVM_Prodia" customModuleProvider="target">
+            <connections>
+                <outlet property="errorView" destination="sLc-0o-5Xn" id="l46-93-PI2"/>
+                <outlet property="loadingView" destination="6ZD-JY-z67" id="nbM-O1-Mpo"/>
+                <outlet property="tableView" destination="fIu-MD-LXA" id="ySU-en-17m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fIu-MD-LXA">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLc-0o-5Xn" customClass="ErrorView" customModule="TheMealApp_MVVM_Prodia" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZD-JY-z67" customClass="LoadingView" customModule="TheMealApp_MVVM_Prodia" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fIu-MD-LXA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3jf-ig-g93"/>
+                <constraint firstItem="fIu-MD-LXA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5uc-VP-gHR"/>
+                <constraint firstItem="sLc-0o-5Xn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B3C-6l-PJl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sLc-0o-5Xn" secondAttribute="bottom" id="DnS-VU-EHt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fIu-MD-LXA" secondAttribute="trailing" id="O6W-z4-Vve"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fIu-MD-LXA" secondAttribute="bottom" id="PYp-sK-IcP"/>
+                <constraint firstItem="6ZD-JY-z67" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WVh-SN-r3F"/>
+                <constraint firstItem="sLc-0o-5Xn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XG9-yT-Af4"/>
+                <constraint firstItem="6ZD-JY-z67" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d2Z-GE-KTO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6ZD-JY-z67" secondAttribute="trailing" id="dHL-Cw-uq4"/>
+                <constraint firstItem="sLc-0o-5Xn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jbe-oT-ZN8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6ZD-JY-z67" secondAttribute="bottom" id="u6x-Cy-MrZ"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

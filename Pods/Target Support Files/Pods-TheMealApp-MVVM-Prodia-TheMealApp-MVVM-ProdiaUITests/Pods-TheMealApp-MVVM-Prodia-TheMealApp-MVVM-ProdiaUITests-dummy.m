@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TheMealApp_MVVM_Prodia_TheMealApp_MVVM_ProdiaUITests : NSObject
+@end
+@implementation PodsDummy_Pods_TheMealApp_MVVM_Prodia_TheMealApp_MVVM_ProdiaUITests
+@end
